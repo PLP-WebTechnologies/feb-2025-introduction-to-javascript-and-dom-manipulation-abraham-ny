@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic DOM Manipulation</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin: 1rem 0;
+}
+
+#color-box {
+    padding: 1rem;
+    background-color: lightgray;
+    margin: 0.5rem 0;
+}
+
+button {
+    margin: 0.2rem;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interactive Webpage</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="dynamic-text">Click the button to change this text</h2>
+            <button onclick="changeText()">Change Text</button>
+        </section>
+
+        <section>
+            <div id="color-box">Click the button to change my color</div>
+            <button onclick="changeColor()">Change Color</button>
+        </section>
+
+        <section>
+            <ul id="item-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+            <button onclick="addItem()">Add Item</button>
+            <button onclick="removeItem()">Remove Item</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interactive Webpage</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
